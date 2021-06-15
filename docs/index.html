@@ -461,6 +461,7 @@ html, body {background: white !important;}
 
 .yes, .no {max-width:35vw;max-height:35vw;background-size:contain;}
 
+#SubscriberForm-Email-pUH1EM8dClJ5ZZ7CvbPiiJ, #SubscriberForm-Email-pUH1EM8dClJ5ZZ7CvbPiiJ:active, SubscriberForm-Email-pUH1EM8dClJ5ZZ7CvbPiiJ:focus {outline-style:none !important;outline:none !important;}
 
 </style>
 	<script>
@@ -488,7 +489,6 @@ var re = /[?&]([^=]+)(?:=([^&]*))?/g;
 var matchInfo;
 while(matchInfo = re.exec(location.search)){ qKeys[matchInfo[1]] = matchInfo[2];}
 </script>
-
 </head>
 <body>
 	
@@ -545,7 +545,7 @@ Profiting from YAYO is the easiest<br>challenge in investment history.
                </div>               
  <div id="step4" class="register-box" style="display:none;position:relative;filter:drop-shadow(0 0 15px black);max-width:90%;margin:0 auto;">
 <h1 style="font-size:28px;">Where should we send your payout link?</h1>
-	  <form class="sendx-submit-form-pUH1EM8dClJ5ZZ7CvbPiiJ" method="post" action="https://app.sendx.io/api/v1/form/pUH1EM8dClJ5ZZ7CvbPiiJ">
+	  <form class="sendx-submit-form-pUH1EM8dClJ5ZZ7CvbPiiJ" target="_blank" method="post" action="https://app.sendx.io/api/v1/form/pUH1EM8dClJ5ZZ7CvbPiiJ">
 	    <input id="SubscriberForm-Email-pUH1EM8dClJ5ZZ7CvbPiiJ" type="email" class="sendx-field-pUH1EM8dClJ5ZZ7CvbPiiJ" data-attr-type="0" name="email" placeholder="Your E-mail" required style="box-shadow: -0.5px 0.5px 3px rgba(0,0,0,0.8);border: 1.5px solid #f6a7b5;font-size: 28px;font-weight:normal;height: auto !important;background:transparent;color: #f6a7b5;border-radius: 10px;font-size: 20px;padding: 0.5rem 1rem;">
 				
       <br>
@@ -630,8 +630,32 @@ TextFit("question-wrappy",35);
              2 == currentQuestion && (document.getElementById("q-y").style.animation="none",document.getElementById("q-y").style.webkitAnimation="none",document.getElementById("q-n").style.animation="none",document.getElementById("q-n").style.webkitAnimation="none",
 load3.style.display = "block", snabbt(load3, { fromOpacity:0, opacity: 1, easing: 'ease' , duration: 800}),step3.style.display = "none", questionsWrapper.style.display = "none",questionsWrapperWrapper.style.display = "none", setTimeout(function() {
                  mainh1.style.display = "none", load3.style.display = "none", step1.style.display = "none", step2.style.display = "none", questionsWrapperWrapper.style.display = "block", questionsWrapper.style.display = "block", step3.style.display = "block", question.innerHTML = questionsArray[currentQuestion],
-				document.getElementById("q-y").style.animation="",document.getElementById("q-y").style.webkitAnimation="",document.getElementById("q-n").style.animation="",document.getElementById("q-n").style.webkitAnimation="", TextFit("question-wrappy",55)}, 2900)), 3 == currentQuestion && (step3.style.display = "none", questionsWrapper.style.display = "none",questionsWrapperWrapper.style.display = "none", step4.style.display = "block", $('#next').click(), disablepop = 1)
+				document.getElementById("q-y").style.animation="",document.getElementById("q-y").style.webkitAnimation="",document.getElementById("q-n").style.animation="",document.getElementById("q-n").style.webkitAnimation="", TextFit("question-wrappy",55)}, 2900)), 3 == currentQuestion && (step3.style.display = "none", questionsWrapper.style.display = "none",questionsWrapperWrapper.style.display = "none", step4.style.display = "block", document.getElementById('SubscriberForm-Email-pUH1EM8dClJ5ZZ7CvbPiiJ').focus(), disablepop = 1)
          };
+
+
+if(qKeys.exo) {
+var elem = document.createElement('img');
+elem.setAttribute('src', 'https://main.exoclick.com/tag.php?goal=be7c2b892dad6730ad6fc0585438a9de&tag='+qKeys.exo);
+elem.setAttribute('height', '1px');
+elem.setAttribute('width', '1px');
+document.body.appendChild(elem);
+}
+
+
+function exo() {
+if(qKeys.exo) {
+var elem = document.createElement('img');
+elem.setAttribute('src', 'https://main.exoclick.com/tag.php?goal=8f1beaaf070724447e2e677bcf3cf299&tag='+qKeys.exo);
+elem.setAttribute('height', '1px');
+elem.setAttribute('width', '1px');
+document.body.appendChild(elem);
+}
+}
+
+document.getElementById("SubscriberForm-Email-pUH1EM8dClJ5ZZ7CvbPiiJ").addEventListener('click', function () {
+exo();
+});
 
 </script>
 
